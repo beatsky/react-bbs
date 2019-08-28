@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, Icon } from 'antd';
+import './style.scss';
 
 const { SubMenu } = Menu;
 
@@ -17,7 +18,7 @@ class NavHeader extends React.Component {
 
   render() {
     return (
-      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
+      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" className="submenu">
         <Menu.Item key="index">
           首页
         </Menu.Item>
