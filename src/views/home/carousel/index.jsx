@@ -4,17 +4,22 @@ import './style.scss';
 
 class HomeCarousel extends React.Component {
   state = {
-    imgList: [1,2,3]
+    imgList: [
+      require('@/assets/img/1.jpg'),
+      require('@/assets/img/2.jpg'),
+      require('@/assets/img/3.jpg'),
+    ]
   }
   render() {
     return (
       <Carousel autoplay>
         {this.state.imgList.map(item => (
-          <div className="home-carousel">
+          <div className="home-carousel" key={item}>
             <img src={item} />
           </div>
         ))}
       </Carousel>
+      // <h1>jjjj</h1>
     )
   }
 }
