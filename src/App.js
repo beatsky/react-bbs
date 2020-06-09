@@ -1,18 +1,22 @@
 import React from 'react';
-
+import { createStore, Provider } from 'react-redux';
+import { BrowserRouter } from "react-router-dom";
 import './App.css';
-import HeaderNav from '@/common/Header/Header';
+import HeaderNav from './components/header/';
 import Index from './routes';
 
 
 
 function App() {
   return (
-    <div>
-      <HeaderNav/>
-      <Index/>
-
-    </div>
+    // <Provider>
+      <>
+        <BrowserRouter key={Math.random()}>
+          <HeaderNav/>
+          <Index/>
+        </BrowserRouter>
+      </>
+    // </Provider>
   );
 }
 

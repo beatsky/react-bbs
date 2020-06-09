@@ -1,6 +1,4 @@
 import React from 'react';
-import { Router, Route, Link, Switch } from 'react-router';
-import { BrowserRouter } from "react-router-dom";
 
 import { Row, Col } from 'antd';
 // import './style.scss';
@@ -31,14 +29,12 @@ class AppHome extends React.Component {
       <Row type="flex" justify="center" align="top">
         <Col span={16} style={{ padding: '0 20px 0' }}>
           <Carousel />
+        </Col>
+        <Col span={10} style={{ padding: '0 20px 0' }}>
+        </Col>
+        <Col span={6} style={{ padding: '0 20px 0' }}>
           <Recommend {...this.state.recommendMessage} />
         </Col>
-        <BrowserRouter key={Math.random()}>
-          <Switch>
-            {/* <Route path="/sth" component={ Recommend } recommendMessage={this.state.recommendMessage} /> */}
-          </Switch>
-        </BrowserRouter>
-
       </Row>
 
     )

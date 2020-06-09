@@ -1,16 +1,16 @@
 import React from 'react';
-import {  Switch } from 'react-router';
-import { BrowserRouter } from "react-router-dom";
+// import { Route } from 'react-router';
+// import {  Switch } from 'react-router';
 import Home from './home'
+import Setting from './user-setting'
+
+
   const Index = () => {
 	return (
-		<div>
-			<BrowserRouter key={Math.random()}>
-                <Switch>
-                    <Home></Home>
-                </Switch>
-            </BrowserRouter>
-		</div>
+      <>
+        <Home></Home>
+        <Setting></Setting>
+      </>
 	)
 }
 

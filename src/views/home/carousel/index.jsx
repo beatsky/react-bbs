@@ -1,3 +1,4 @@
+import { withRouter } from 'react-router-dom';
 import React from 'react';
 import { Carousel } from 'antd';
 import './style.scss';
@@ -19,7 +20,6 @@ class HomeCarousel extends React.Component {
           </div>
         ))}
       </Carousel>
-      // <h1>jjjj</h1>
     )
   }
 }

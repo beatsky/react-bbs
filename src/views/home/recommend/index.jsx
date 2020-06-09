@@ -1,10 +1,9 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { Card } from 'antd';
 import './style.scss'
 
 const Recommends = (props) => {
-	console.log(props)
-
 	const {
 		title,
 		href,

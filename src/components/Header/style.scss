@@ -3,19 +3,36 @@
 /*修改antd默认样式*/
 .ant-menu-horizontal {
 	border: none;
-}
-
-.ant-menu-submenu-selected {
-	border: none;
-	color: $white;
-	font-size: 20px;
-	:hover {
-		background: $light-blue;
+	.ant-menu-item {
+		line-height: 64px;
+		font-size: 14px;
+		border: none;
+		color: $white;
+		&:hover {
+			background: $light-blue;
+			font-weight: 600;
+			color: $white;
+			border: none;
+		}
+	}
+	.ant-menu-item-selected {
+		border: none;
+		color: $white;
+	}
+	.ant-menu-item-active {
+		border: none;
+		color: $white;
+		:hover {
+			background: $light-blue;
+			border: none;
+		}
 	}
 }
 
+
 .submenu {
-	background: #00c3ff;
+	height: 64px;
+	background: $blue;
 	color: $white;
-	
+	padding: 0 120px;
 }
